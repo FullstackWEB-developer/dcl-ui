@@ -6,7 +6,6 @@
   "module": "dist/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "commit": "simple-commit-message",
     "start": "start-storybook -p 6006",
     "build": "npm run build:lib && npm run build:dist ",
     "build:lib": "rimraf lib && webpack --config webpack.config.js",
@@ -23,17 +22,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/FullstackWEB-developer/dcl-ui.git"
-  },
-  "release": {
-    "branches": [
-      "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
-      "@semantic-release/npm"
-    ]
   },
   "keywords": [
     "dcl",
