@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-          registry-url: 'https://registry.npmjs.org'
       - name: npm Install
         run: npm install --legacy-peer-deps
       - name: Install dependencies
