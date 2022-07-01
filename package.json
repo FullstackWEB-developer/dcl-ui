@@ -1,7 +1,7 @@
 {
-  "name": "decentraland-ui",
+  "name": "dcl-ui",
   "version": "0.0.0-development",
-  "description": "Decentraland's UI components and styles",
+  "description": "Dcl's UI components and styles",
   "main": "lib/index.js",
   "module": "dist/index.js",
   "typings": "lib/index.d.ts",
@@ -21,26 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FullstackWEB-developer/decentraland-ui.git"
-  },
-  "release": {
-    "repositoryUrl": "https://github.com/FullstackWEB-developer/decentraland-ui.git",
-    "dryRun": false,
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            "dist/**"
-          ]
-        }
-      ]
-    ]
+    "url": "https://github.com/FullstackWEB-developer/dcl-ui.git"
   },
   "keywords": [
-    "decentraland",
+    "dcl",
     "ui",
     "react",
     "semantic-ui",
@@ -48,12 +32,12 @@
     "styles",
     "themes"
   ],
-  "author": "Decentraland",
+  "author": "Dcl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FullstackWEB-developer/decentraland-ui/issues"
+    "url": "https://github.com/FullstackWEB-developer/dcl-ui/issues"
   },
-  "homepage": "https://github.com/FullstackWEB-developer/decentraland-ui#readme",
+  "homepage": "https://github.com/FullstackWEB-developer/dcl-ui#readme",
   "devDependencies": {
     "@storybook/addon-centered": "^5.3.13",
     "@storybook/addon-storysource": "^5.3.13",
