@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: 
   push:
-    paths: [".storybook/**", "src/**"] # Trigger the action only when files change in the folders defined here
+    paths: [".storybook/**", "src/**", "docs/**"] # Trigger the action only when files change in the folders defined here
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
         with:
           persist-credentials: false
       - name: npm Install
-        run: npm install --legacy-peer-deps
+        run: npm install
       - name: npm Build
         run:  npm run build:storybook
       - name: Deploy 🚀
