@@ -2,7 +2,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  ignorePatterns: ['lib/**/*', 'dist/**/*'],
+  ignorePatterns: ['lib/**/*', 'dist/**/*', "docs/**/*"],
   plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
