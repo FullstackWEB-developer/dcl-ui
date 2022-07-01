@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "ui.decentraland.org",
+  "alias": "ui.dcl.org",
   "build": {
     "env": {}
   },
