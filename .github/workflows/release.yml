@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
+      - name: npm Install
+        run: npm install
       - name: Install dependencies
         run: npm ci --legacy-peer-deps #TODO: remove this flag once we get rid of tslint
       - name: Prettier check
