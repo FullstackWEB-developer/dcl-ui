@@ -38,48 +38,48 @@ jobs:
             - dist
           key: dist-{{ .Branch }}-{{ .Revision }}
 
-  # deploy:
-  #   docker:
-  #     - image: circleci/node:10
+  deploy:
+    docker:
+      - image: circleci/node:16
 
-  #   working_directory: /tmp/ui
+    working_directory: /tmp/ui
 
-  #   steps:
-  #     - checkout
-  #     - restore_cache:
-  #         keys:
-  #           - dependencies-{{ checksum "package-lock.json" }}
-  #     - run:
-  #         name: Install node dependencies
-  #         command: npm install
-  #     - restore_cache:
-  #         keys:
-  #           - lib-{{ .Branch }}-{{ .Revision }}
-  #     - restore_cache:
-  #         keys:
-  #           - dist-{{ .Branch }}-{{ .Revision }}
-  #     - run:
-  #         name: Build storybook
-  #         command: npm run build:storybook
-  #     - run:
-  #         name: Copy styles from lib
-  #         command: cp ./lib/*.css ./storybook-static
-  #     - add_ssh_keys:
-  #         fingerprints:
-  #           - '7d:bf:98:9c:fa:d8:d5:9c:38:5c:4d:59:fe:8e:01:72'
-  #     - run:
-  #         name: Deploy to Github Pages
-  #         command: |
-  #           npm init --yes
-  #           npm install gh-pages --no-save
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - restore_cache:
+          keys:
+            - lib-{{ .Branch }}-{{ .Revision }}
+      - restore_cache:
+          keys:
+            - dist-{{ .Branch }}-{{ .Revision }}
+      - run:
+          name: Build storybook
+          command: npm run build:storybook
+      - run:
+          name: Copy styles from lib
+          command: cp ./lib/*.css ./storybook-static
+      - add_ssh_keys:
+          fingerprints:
+            - '7d:bf:98:9c:fa:d8:d5:9c:38:5c:4d:59:fe:8e:01:72'
+      - run:
+          name: Deploy to Github Pages
+          command: |
+            npm init --yes
+            npm install gh-pages --no-save
 
-  #           mkdir storybook-static/.circleci
-  #           touch storybook-static/.circleci/config.yml
-  #           echo 'ui.decentraland.org' > storybook-static/CNAME
+            mkdir storybook-static/.circleci
+            touch storybook-static/.circleci/config.yml
+            echo 'ui.dcl.org' > storybook-static/CNAME
 
-  #           git config user.name "decentraland-bot"
-  #           git config user.email "developers@decentraland.org"
-  #           ./node_modules/.bin/gh-pages --dist storybook-static
+            git config user.name "dcl-bot"
+            git config user.email "developers@dcl.org"
+            ./node_modules/.bin/gh-pages --dist storybook-static
 
   release:
     docker:
@@ -113,12 +113,12 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-      # - deploy:
-      #     requires:
-      #       - build
-      #     filters:
-      #       branches:
-      #         only: master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
       - release:
           requires:
             - build
