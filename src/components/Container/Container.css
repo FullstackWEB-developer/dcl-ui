@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1200px) {
+  .ui.container {
+    width: 1064px;
+  }
+
+  .ui.container.full-width {
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .ui.container {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}

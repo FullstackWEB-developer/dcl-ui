@@ -1,0 +1,37 @@
+.dcl.mana {
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: inherit;
+}
+.dcl.mana .symbol {
+  padding-right: 0.3em;
+  display: inline-block;
+}
+
+.dcl.mana .symbol .ethereum {
+  display: inline-block;
+  width: 0.8125em;
+  height: 0.875em;
+  transform: translateY(0.15em);
+  background-image: url('../../assets/symbol.svg');
+  background-size: cover;
+}
+
+.dcl.mana + .dcl.mana {
+  padding-left: 0.3em;
+}
+
+.dcl.mana.inline {
+  font-size: 1em;
+}
+
+.dcl.mana .matic {
+  width: 1em;
+  height: 1em;
+  background-image: url(../../assets/mana-l2.svg);
+  display: inline-block;
+  background-size: contain;
+  filter: var(--brightness);
+  transform: translateY(0.2em);
+}

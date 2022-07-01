@@ -1,0 +1,46 @@
+.ui.pagination.menu {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.ui.pagination.menu .item:before {
+  width: 0px;
+}
+
+.ui.pagination.menu .item {
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text);
+  padding: 11.5px;
+  min-width: 32px;
+  height: 32px;
+}
+
+/* fixes a semantic-ui bug, see the "1000 pages story" */
+.ui.pagination.menu .item[value*='NaN'] {
+  display: none;
+}
+
+.ui.pagination.menu .item:hover {
+  color: var(--text-on-secondary);
+  background: var(--secondary);
+}
+
+.ui.pagination.menu .item.active {
+  color: var(--text-on-primary);
+  background: var(--primary);
+}
+
+.ui.pagination.menu .item + .item {
+  margin-left: 16px;
+}
+
+.ui.pagination.menu .item:focus,
+.ui.pagination.menu .item:active {
+  outline: none;
+}
+
+.ui.pagination.menu .item:last-child {
+  border-radius: 6px;
+}

@@ -1,0 +1,41 @@
+.ui.table {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.ui[class*='very basic'].table:not(.sortable):not(.striped)
+  thead
+  tr:first-child
+  th {
+  padding-top: 11px;
+}
+
+.ui.table thead th {
+  padding: 11px 0px;
+  color: var(--secondary-text);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.ui.table td {
+  padding: 18px 0px;
+}
+
+.ui.table thead th {
+  border-bottom: 1px solid var(--divider);
+}
+
+.ui.table tr td {
+  border-top: 1px solid var(--divider);
+}
+
+.ui.table td a {
+  color: var(--text);
+}

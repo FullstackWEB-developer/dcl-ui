@@ -1,0 +1,114 @@
+.dcl.login-modal {
+  width: 520px;
+}
+
+.dcl.login-modal .dcl.option {
+  width: 410px;
+  height: 80px;
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  border: var(--outline);
+  background-color: var(--card-on-modal);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dcl.login-modal .dcl.option:hover {
+  background-color: var(--secondary-on-modal-hover);
+}
+
+.dcl.login-modal .dcl.option .image {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  background-size: contain;
+}
+
+.dcl.option.metamask .image {
+  background-image: inline('../../images/metamask.svg');
+}
+
+.dcl.option.dapper .image {
+  background-image: inline('../../images/dapper.png');
+}
+
+.dcl.option.fortmatic .image {
+  background-image: inline('../../images/fortmatic.png');
+}
+
+.dcl.option.wallet-connect .image {
+  background-image: inline('../../images/wallet-connect.png');
+}
+
+.dcl.option.samsung-blockchain-wallet .image {
+  background-image: inline('../../images/samsung-blockchain-wallet.svg');
+}
+
+.dcl.option.coinbase .image,
+.dcl.option.wallet-link .image {
+  background-image: inline('../../images/coinbase.svg');
+}
+
+.dcl.login-modal .dcl.option .info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.dcl.login-modal .dcl.option .info .title {
+  font-weight: bold;
+  color: var(--text);
+}
+
+.dcl.login-modal .dcl.option .info .subtitle {
+  color: var(--secondary-text);
+  margin-top: 4px;
+}
+
+.dcl.login-modal .dcl.option + .dcl.option {
+  margin-top: 16px;
+}
+
+.dcl.login-modal .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.dcl.login-modal .message {
+  margin-top: 28px;
+  text-align: center;
+  display: block;
+  color: var(--text);
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.dcl.login-modal .error {
+  opacity: 0;
+  user-select: none;
+  color: var(--primary);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.dcl.login-modal .error.visible {
+  transition: opacity 0.25s ease;
+  opacity: 1;
+  user-select: auto;
+}
+
+.dcl.login-modal .loader-background {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}

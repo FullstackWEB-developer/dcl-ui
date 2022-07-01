@@ -1,0 +1,21 @@
+.Page-story-container {
+  position: relative;
+  border: 1px solid var(--divider);
+  overflow: auto;
+  width: 1196px;
+  height: 450px;
+}
+
+.Page-story-container .dcl.hero {
+  background: var(--luisxvi-violet);
+}
+
+.Page-story-container .dcl.hero .ui.header {
+  color: white;
+}
+
+.dcl.page.table-story .ui.table .dcl.atlas {
+  margin-top: -22px;
+  border-radius: 8px;
+  overflow: hidden;
+}
