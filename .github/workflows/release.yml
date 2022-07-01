@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   build-test-publish:
-    name: Build and Test
+    name: Build and publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
