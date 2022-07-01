@@ -25,6 +25,6 @@
     "baseUrl": "./packages",
     "lib": ["es2017", "dom", "esnext.asynciterable"]
   },
-  "exclude": ["node_modules", "lib", "docs"],
+  "exclude": ["node_modules", "lib"],
   "include": ["src/**/*", ".storybook"]
 }
