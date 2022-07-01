@@ -24,18 +24,6 @@
     "type": "git",
     "url": "https://github.com/FullstackWEB-developer/dcl-ui.git"
   },
-  "release": {
-    "branches": [
-      "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ]
-  },
   "keywords": [
     "dcl",
     "ui",
