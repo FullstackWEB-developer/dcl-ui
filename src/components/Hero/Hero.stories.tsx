@@ -12,7 +12,7 @@ storiesOf('Hero', module)
   .add('Text only', () => (
     <div className="story">
       <Hero centered>
-        <Hero.Header>Help us build Decentraland</Hero.Header>
+        <Hero.Header>Help us build Birdezkingdom</Hero.Header>
         <Hero.Description>Join the discussion</Hero.Description>
       </Hero>
     </div>
@@ -20,7 +20,7 @@ storiesOf('Hero', module)
   .add('Left alignment', () => (
     <div className="story">
       <Hero>
-        <Hero.Header>Help us build Decentraland</Hero.Header>
+        <Hero.Header>Help us build Birdezkingdom</Hero.Header>
         <Hero.Description>Join the discussion</Hero.Description>
       </Hero>
     </div>
@@ -28,7 +28,7 @@ storiesOf('Hero', module)
   .add('With content', () => (
     <div className="story">
       <Hero centered>
-        <Hero.Header>Help us build Decentraland</Hero.Header>
+        <Hero.Header>Help us build Birdezkingdom</Hero.Header>
         <Hero.Description>Join the discussion</Hero.Description>
         <Hero.Content>
           <Parallax>
@@ -47,7 +47,7 @@ storiesOf('Hero', module)
   .add('With actions', () => (
     <div className="story">
       <Hero centered>
-        <Hero.Header>Help us build Decentraland</Hero.Header>
+        <Hero.Header>Help us build Birdezkingdom</Hero.Header>
         <Hero.Description>Join the discussion</Hero.Description>
         <Hero.Actions>
           <Button primary>Do Something</Button>

@@ -85,16 +85,16 @@ export class Footer extends React.PureComponent<FooterProps> {
             direction="right"
             i18n={i18n.dropdown}
           />
-          {/* <div className="links">
-            <a href="https://decentraland.org">{i18n.links.home}</a>
-            <a href="https://decentraland.org/privacy">{i18n.links.privacy}</a>
+          <div className="links">
+            <a href="https://birdezkingdom.com">{i18n.links.home}</a>
+            {/* <a href="https://decentraland.org/privacy">{i18n.links.privacy}</a>
             <a href="https://decentraland.org/terms">{i18n.links.terms}</a>
             <a href="https://decentraland.org/content">{i18n.links.content}</a>
-            <a href="https://decentraland.org/ethics">{i18n.links.ethics}</a>
-          </div> */}
+            <a href="https://decentraland.org/ethics">{i18n.links.ethics}</a> */}
+          </div>
         </div>
-        {/* <div className="secondary-footer">
-          <div className="social-links">
+        <div className="secondary-footer">
+          {/* <div className="social-links">
             <a href="https://dcl.gg/discord">
               <i className="social-icon discord" />
             </a>
@@ -107,11 +107,11 @@ export class Footer extends React.PureComponent<FooterProps> {
             <a href="https://twitter.com/decentraland">
               <i className="social-icon twitter" />
             </a>
-          </div>
+          </div> */}
           <div className="copyright">
-            © {new Date().getFullYear()} Decentraland
+            © {new Date().getFullYear()} Birdezkingdom
           </div>
-        </div> */}
+        </div>
       </Container>
     )
   }

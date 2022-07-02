@@ -13,9 +13,9 @@ addParameters({
   options: {
     theme: create({
       base: 'light',
-      brandTitle: 'UI | Decentraland',
-      brandUrl: 'https://decentraland.org',
-      brandImage: 'https://ui.decentraland.org/color_dark_text.png'
+      brandTitle: 'UI | Birdezkingdom',
+      brandUrl: 'https://birdezkingdom.com',
+      brandImage: 'https://birdezkingdom.com/favicon/android-icon-192x192.png'
     })
   }
 })

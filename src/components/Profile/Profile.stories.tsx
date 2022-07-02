@@ -33,7 +33,7 @@ storiesOf('Profile', module)
       <Profile address="0xdeadbeef" avatar={avatar} inline />
     </>
   ))
-  .add('Decentraland', () => (
+  .add('Birdezkingdom', () => (
     <>
       You sent <Mana inline>1,000</Mana> to{' '}
       <Profile address="0xdeadbeef" avatar={avatar} inline isDecentraland />

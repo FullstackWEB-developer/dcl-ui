@@ -14,7 +14,7 @@ storiesOf('Segment', module)
   .addDecorator(centered)
   .add('Single segment', () => (
     <Segment style={{ width: 400 }}>
-      <Header>Decentraland</Header>
+      <Header>Birdezkingdom</Header>
       <p className="secondary-text">A virtual world built on open standards</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

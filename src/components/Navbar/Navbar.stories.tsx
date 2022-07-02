@@ -100,7 +100,7 @@ storiesOf('Navbar', module)
       <div className="Navbar-story-container">
         <Navbar activePage="dao" isFullscreen />
         <Hero height={442} centered>
-          <Hero.Header>Help us build Decentraland</Hero.Header>
+          <Hero.Header>Help us build Birdezkingdom</Hero.Header>
           <Hero.Description>Join the discussion</Hero.Description>
           <Hero.Content>
             <Parallax>
@@ -121,7 +121,7 @@ storiesOf('Navbar', module)
       <div className="Navbar-story-container">
         <Navbar activePage="dao" isFullscreen isOverlay />
         <Hero className="over-gradient" height={442} centered>
-          <Hero.Header>Help us build Decentraland</Hero.Header>
+          <Hero.Header>Help us build Birdezkingdom</Hero.Header>
           <Hero.Description>Join the discussion</Hero.Description>
           <Hero.Content>
             <div className="color-layer" />

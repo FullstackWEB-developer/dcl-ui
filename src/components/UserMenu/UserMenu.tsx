@@ -132,7 +132,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                     size="small"
                     className={onClickBalance ? 'clickable' : undefined}
                     title={`${manaBalances[network].toLocaleString()} MANA`}
-                    href="https://decentraland-account.vercel.app"
+                    href="https://account-birdezkingdom.vercel.app"
                   >
                     {Number(manaBalances[network].toFixed(2)).toLocaleString()}
                   </Mana>
@@ -158,7 +158,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   </div>
                 </div>
                 <ul className="actions">
-                  <a href="https://decentraland-account.vercel.app">
+                  <a href="https://account-birdezkingdom.vercel.app">
                     <li>
                       <Icon name="user"></Icon>
                       {i18n.account}

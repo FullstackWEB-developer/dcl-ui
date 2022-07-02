@@ -5,4 +5,4 @@ import { Logo } from './Logo'
 
 storiesOf('Logo', module)
   .addDecorator(centered)
-  .add('Decentraland', () => <Logo />)
+  .add('Birdezkingdom', () => <Logo />)

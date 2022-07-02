@@ -43,7 +43,7 @@ export class Profile extends React.PureComponent<ProfileProps> {
           title={address}
         >
           <Logo />
-          {imageOnly ? null : <span className="name">Decentraland</span>}
+          {imageOnly ? null : <span className="name">Birdezkingdom</span>}
         </span>
       )
     }
