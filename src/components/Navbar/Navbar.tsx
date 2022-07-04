@@ -114,7 +114,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       <>
         <Menu.Item
           active={activePage === 'marketplace'}
-          href="https://marketplace-birdezkingdom.vercel.app"
+          href="https://market-birdezkingdom.vercel.app"
         >
           {i18n.menu.marketplace}
         </Menu.Item>
