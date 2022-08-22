@@ -94,20 +94,20 @@ export class Footer extends React.PureComponent<FooterProps> {
           </div>
         </div>
         <div className="secondary-footer">
-          {/* <div className="social-links">
-            <a href="https://dcl.gg/discord">
-              <i className="social-icon discord" />
+          <div className="social-links">
+            <a href="https://opensea.io/collection/birdez-kingdom">
+              <i className="social-icon opensea" />
             </a>
-            <a href="https://reddit.com/r/decentraland">
-              <i className="social-icon reddit" />
+            <a href="https://www.instagram.com/birdezgang">
+              <i className="social-icon instagram" />
             </a>
-            <a href="https://github.com/decentraland">
-              <i className="social-icon github" />
-            </a>
-            <a href="https://twitter.com/decentraland">
+            <a href="https://twitter.com/BirdezGang">
               <i className="social-icon twitter" />
             </a>
-          </div> */}
+            <a href="https://discord.gg/birdezgang">
+              <i className="social-icon discord" />
+            </a>
+          </div>
           <div className="copyright">
             © {new Date().getFullYear()} Birdezkingdom
           </div>

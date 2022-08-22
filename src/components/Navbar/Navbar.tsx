@@ -113,6 +113,18 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     return (
       <>
         <Menu.Item
+          active={activePage === 'lean'}
+          href="https://docs.birdezgang.com/welcome-to-gitbook/birdez-kingdom-metaverse-nfts/birdez-kingdom-nfts"
+        >
+          Learn more
+        </Menu.Item>
+        <Menu.Item
+          active={activePage === 'map'}
+          href="https://birdezkingdom.com/maps"
+        >
+          Kingdom Map
+        </Menu.Item>
+        <Menu.Item
           active={activePage === 'marketplace'}
           href="https://market-birdezkingdom.vercel.app"
         >
@@ -124,6 +136,19 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
         >
           {i18n.menu.builder}
         </Menu.Item>
+        {/* <a href="https://opensea.io/collection/birdez-kingdom" className="item">
+          <i className="social-icon opensea" />
+        </a>
+        <a href="https://www.instagram.com/birdezgang" className="item">
+          <i className="social-icon instagram" />
+        </a>
+        <a href="https://twitter.com/BirdezGang" className="item">
+          <i className="social-icon twitter" />
+        </a>
+        <a href="https://discord.gg/birdezgang" className="item">
+          <i className="social-icon discord" />
+        </a> */}
+
         {/* <Menu.Item
           active={activePage === 'docs'}
           href="https://docs.decentraland.org"
@@ -249,9 +274,10 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
           <div className="dcl navbar-menu">
             <NotMobile>
               <Menu secondary stackable>
-                <a className="dcl navbar-logo" href="https://birdezkingdom.com">
-                  <Logo />
+                <a className="dcl navbar-title" href="https://birdezkingdom.com">
+                  birdez kingdom
                 </a>
+                <span className="dcl navbar-line"></span>
                 {this.renderLeftMenu()}
               </Menu>
             </NotMobile>
