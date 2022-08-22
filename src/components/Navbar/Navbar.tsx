@@ -274,7 +274,10 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
           <div className="dcl navbar-menu">
             <NotMobile>
               <Menu secondary stackable>
-                <a className="dcl navbar-title" href="https://birdezkingdom.com">
+                <a
+                  className="dcl navbar-title"
+                  href="https://birdezkingdom.com"
+                >
                   birdez kingdom
                 </a>
                 <span className="dcl navbar-line"></span>
