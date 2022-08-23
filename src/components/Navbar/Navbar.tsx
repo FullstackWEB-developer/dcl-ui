@@ -4,6 +4,7 @@ import { Mana } from '../Mana/Mana'
 import { Blockie } from '../Blockie/Blockie'
 import { Container } from '../Container/Container'
 import { Header } from '../Header/Header'
+import { Button } from '../Button/Button'
 import { Logo } from '../Logo/Logo'
 import { Mobile, NotMobile } from '../Media'
 import './Navbar.css'
@@ -220,15 +221,18 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     } else if (isConnecting && !isSignIn) {
       return (
         <Menu secondary>
-          <Menu.Item disabled>{i18n.account.connecting}</Menu.Item>
+          <Menu.Item className="sign-in-button" disabled>
+            {i18n.account.connecting}
+          </Menu.Item>
         </Menu>
       )
     } else if (onSignIn || isSignIn) {
       return (
         <Menu secondary>
-          <Menu.Item className="sign-in-button" onClick={onSignIn}>
-            {i18n.account.signIn}
-          </Menu.Item>
+          <Button className="sign-in-button" onClick={onSignIn}>
+            {/* {i18n.account.signIn} */}
+            Connect Wallet
+          </Button>
         </Menu>
       )
     } else {

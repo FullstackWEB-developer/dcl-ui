@@ -95,9 +95,8 @@
   display: inline-block;
   margin: 0px 20px 0px 0px;
   color: var(--text);
-  font-family: Tahoma, Verdana, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .dcl.account-wrapper .dcl.mana .symbol .ethereum {
@@ -117,6 +116,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  margin-left: 10px;
 }
 
 .dcl.navbar-account .ui.menu.ui.menu.secondary.navbar-account-menu {
@@ -205,6 +205,17 @@
   opacity: 0;
   transform: translateY(-16px);
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.dcl.navbar .sign-in-button {
+  margin-left: 20px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 0px;
+  background-color: rgb(255, 131, 112);
+  box-shadow: rgb(255 131 112 / 67%) 0px 0px 10px,
+    rgb(255 131 112 / 67%) 0px 0px 12px;
 }
 
 .dcl.navbar.sign-in .ui.menu .item.sign-in-button {
